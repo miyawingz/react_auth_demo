@@ -1,9 +1,10 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import Input from './input';
 
 class SignUp extends React.Component {
-    userSignUp(FormValues) {
-        console.log(FormValues);
+    userSignUp(formValues) {
+        console.log(formValues);
     }
 
     render() {
@@ -13,17 +14,14 @@ class SignUp extends React.Component {
                 <h1 className="center">Sign Up</h1>
                 <form onSubmit={handleSubmit(this.userSignUp)}>
                     <div className="row">
-                        <div className="col s12 input-field">
-                            <Field type="text" name="Name" component="input" />
-                            <label>Name</label>
-                        </div>
+                    <Field name="name" component={Input} label="Name" size="s12 m6" />
+                    <Field name="email" component={Input} label="Email" size="s12 m6"  />
                     </div>
                     <div className="row">
-                        <div className="col s12 input-field">
-                            <Field type="text" name="Email" component="input" />
-                            <label>Email</label>
-                        </div>
+                    <Field name="password" component={Input} label="Password" type="password" size="s12 m6" />
+                    <Field name="confirmPW" component={Input} label="Confirm Password" type="password" size="s12 m6" />
                     </div>
+
                     <div className="row right">
                         <button className="btn blue">create account</button>
                     </div>
@@ -33,6 +31,30 @@ class SignUp extends React.Component {
     }
 }
 
+function validate(formValues) {
+    const { name, email, password, confirmPW } = formValues;
+    const errors = {};
+
+    if (!name) {
+        errors.name = "name not exist"
+    }
+
+    if (!email) {
+        errors.email = "email not exist"
+    }
+
+    if (!password) {
+        errors.password = 'password not exist'
+    }
+
+    if (confirmPW !== password) {
+        errors.confirmPW = 'pw not match'
+    }
+
+    return errors;
+}
+
 export default reduxForm({
-    form: 'sign-up'
+    form: 'sign-up',
+    validate: validate
 })(SignUp);
