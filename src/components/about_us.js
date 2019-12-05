@@ -1,0 +1,11 @@
+import React from 'react';
+
+export default props => {
+    return (
+        <div>
+            <h1 className="center">About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque dolorem sit cum perferendis ad maxime vitae voluptatibus numquam sed tenetur omnis possimus libero, pariatur iusto assumenda totam temporibus ducimus rerum eum dolor officia quod. Reprehenderit nihil earum nemo vitae voluptate placeat corrupti totam minus accusantium, blanditiis iste natus obcaecati adipisci sapiente ullam quas debitis libero impedit velit unde ad alias? Explicabo magnam earum, praesentium necessitatibus sequi esse ratione architecto obcaecati at, deleniti deserunt molestias nemo debitis illum quas veritatis nisi est autem expedita incidunt quasi odio. Quis distinctio optio aspernatur, ad ratione debitis voluptatibus qui recusandae amet. Nihil explicabo hic odio natus ut, deserunt porro nobis a minima eaque, asperiores nemo quaerat autem libero, mollitia fugiat ullam perspiciatis suscipit aspernatur distinctio vitae voluptates facere deleniti saepe. Eligendi quos magni facere eius totam perferendis pariatur recusandae quasi reiciendis culpa sequi facilis dolorem magnam eos veniam vero quibusdam, quae ab minus hic deleniti harum asperiores adipisci quisquam! Minus necessitatibus rerum ullam earum nesciunt! Reprehenderit, velit fuga blanditiis laborum voluptate nobis maiores veniam et facere eveniet illo consequatur dignissimos repellat minus quas, nesciunt obcaecati architecto magni. Doloremque cumque facere porro est odit ipsum magni, vel, molestiae laboriosam temporibus accusamus reprehenderit, debitis ea.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sed incidunt doloribus dignissimos soluta officia sit beatae, veritatis autem ducimus quibusdam nam odit corrupti, cupiditate quas praesentium accusamus pariatur delectus quia libero commodi consequatur saepe. Modi incidunt accusantium ad, iste, assumenda nobis nulla, quidem cupiditate odit illo obcaecati quo ipsum.</p>
+        </div>
+    )
+}
