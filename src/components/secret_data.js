@@ -1,0 +1,12 @@
+import React from 'react';
+
+export default (props) => {
+    return (
+        <div>
+            <h1 className="center red-text">secret data</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae voluptatum minima sapiente, nisi deserunt perferendis, aspernatur praesentium doloremque dolorum earum ipsa distinctio cum perspiciatis laboriosam ut ullam! Accusamus, aspernatur. Atque voluptatibus et a beatae quas perferendis doloremque delectus, vel fuga dolor neque id quasi amet temporibus debitis in sit sunt quaerat impedit. Dolorum, suscipit assumenda explicabo consequatur excepturi placeat quos qui itaque rerum! Sequi exercitationem, quos commodi quis quasi, necessitatibus itaque dolor repellat iusto modi minus neque perspiciatis deleniti amet. Veniam, ab commodi? Eaque, natus. Atque corrupti a recusandae omnis nulla veritatis! In, maxime. Sed consequatur sapiente ratione delectus quisquam eos exercitationem quos, perspiciatis hic, est optio veritatis culpa, molestiae quam! In, odio impedit! Est eius sit natus accusantium velit enim, vel porro maxime similique quaerat laudantium, tempore nemo, quod atque neque quo illo quos ipsum! Fugiat porro blanditiis inventore cum incidunt tempora at reprehenderit dolore error magni. Minus, aspernatur quam repudiandae ipsum minima necessitatibus numquam fugiat atque eius ea porro, ipsa, quo a voluptatibus id consequatur in! Quae mollitia ut ducimus eligendi iusto dolorum, hic repudiandae molestiae eius. Consequuntur repellat esse natus? Doloremque vitae eum sequi assumenda rerum placeat tenetur dignissimos rem porro reprehenderit accusamus cum, iste ut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maiores! Nam, harum necessitatibus impedit, modi officiis quia perspiciatis dolore eaque saepe odit et quas error assumenda hic laborum voluptate nostrum beatae quo fugit! Illum nihil unde possimus natus optio deserunt. Quis quam magni doloremque nam. Quisquam laudantium voluptatibus minus facere?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ullam voluptatum ipsam doloribus excepturi necessitatibus unde expedita molestias aspernatur atque quia debitis odio sed deleniti suscipit, eius sint optio porro.</p>
+        </div>
+    )
+}

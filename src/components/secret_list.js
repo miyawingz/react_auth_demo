@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import auth from '../hoc/auth';
 
-export default props => {
+const SecretList = props => {
     return (
         <div>
-            <h1 className="centr">secret list</h1>
+            <h1 className="center red-text">secret list</h1>
             <ol>
                 <li>abc</li>
                 <li>def</li>
@@ -15,3 +16,5 @@ export default props => {
         </div>
     )
 }
+
+export default SecretList;
