@@ -14,6 +14,39 @@ class Nav extends React.Component {
         return <button onClick={userSignIn} className="btn blue lighten-3 waves-effect waves-light">sign in</button>
     }
 
+    AuthLinks = (props) => {
+        const { auth, userSignOut } = this.props;
+        if (auth) {
+            return (
+                <React.Fragment>
+                    <li>
+                        <Link to="/secret-data">Secret Data</Link>
+                    </li>
+                    <li>
+                        <Link to="/secret-list">Secret List</Link>
+                    </li>
+                    <li>
+                        <Link to="/quote">Quote</Link>
+                    </li>
+                    <li>
+                        <button onClick={userSignOut} className="btn yellow waves-effect waves-light">Sign Out</button>
+                    </li>
+                </React.Fragment>
+            )
+        }
+
+        return (
+            <>
+                <li>
+                    <Link to="/sign-in">Sign In</Link>
+                </li>
+                <li>
+                    <Link to="/sign-up">Sign Up</Link>
+                </li>
+            </>
+        )
+    }
+
     render() {
         console.log('auth', this.props.auth);
 
@@ -32,16 +65,7 @@ class Nav extends React.Component {
                         <li>
                             <Link to="/about-us">About Us</Link>
                         </li>
-                        <li>
-                            <Link to="/secret-data">Secret Data</Link>
-                        </li>
-                        <li>
-                            <Link to="/secret-list">Secret List</Link>
-                        </li>
-                        <li>
-                            <this.AuthBtn />
-                            {/* {this.AuthBtn()} */}
-                        </li>
+                        <this.AuthLinks />
                     </ul>
                 </div>
             </nav>

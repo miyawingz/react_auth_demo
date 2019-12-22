@@ -10,6 +10,7 @@ import SecretData from './secret_data';
 import SecretList from './secret_list';
 import SignIn from './sign_in';
 import SignUp from './sign_up';
+import Quote from './quote';
 import auth from '../hoc/auth';
 
 const App = () => (
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/secret-list" component={auth(SecretList)} />
             <Route path="/sign-in" component={SignIn} />
             <Route path="/sign-up" component={SignUp} />
+            <Route path="/quote" component={auth(Quote)} />
         </div>
     </div>
 );

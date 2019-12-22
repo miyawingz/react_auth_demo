@@ -15,6 +15,7 @@
     "url": "https://github.com/miyawingz/react_auth_demo.git"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "materialize-css": "^1.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

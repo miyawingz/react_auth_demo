@@ -1,10 +1,12 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import Input from './input';
+import { connect } from 'react-redux';
+import { userSignUp } from '../actions';
 
 class SignUp extends React.Component {
-    userSignUp(formValues) {
-        console.log(formValues);
+    userSignUp = (formValues) => {
+        this.props.userSignUp(formValues);
     }
 
     render() {
@@ -14,12 +16,12 @@ class SignUp extends React.Component {
                 <h1 className="center">Sign Up</h1>
                 <form onSubmit={handleSubmit(this.userSignUp)}>
                     <div className="row">
-                    <Field name="name" component={Input} label="Name" size="s12 m6" />
-                    <Field name="email" component={Input} label="Email" size="s12 m6"  />
+                        <Field name="name" component={Input} label="Name" size="s12 m6" />
+                        <Field name="email" component={Input} label="Email" size="s12 m6" />
                     </div>
                     <div className="row">
-                    <Field name="password" component={Input} label="Password" type="password" size="s12 m6" />
-                    <Field name="confirmPW" component={Input} label="Confirm Password" type="password" size="s12 m6" />
+                        <Field name="password" component={Input} label="Password" type="password" size="s12 m6" />
+                        <Field name="confirmPW" component={Input} label="Confirm Password" type="password" size="s12 m6" />
                     </div>
 
                     <div className="row right">
@@ -54,7 +56,11 @@ function validate(formValues) {
     return errors;
 }
 
-export default reduxForm({
+SignUp = reduxForm({
     form: 'sign-up',
     validate: validate
+})(SignUp);
+
+export default connect(null, {
+    userSignUp: userSignUp
 })(SignUp);
